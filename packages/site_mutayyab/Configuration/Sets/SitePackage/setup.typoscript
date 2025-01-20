@@ -1,0 +1,16 @@
+@import './TypoScript/*.typoscript'
+@import './TypoScript/ContentElements/*.typoscript'
+@import 'EXT:listelements/Configuration/TypoScript/setup.typoscript'
+
+lib.contentElement {
+   layoutRootPaths {
+      200 = EXT:site_mutayyab/Resources/Private/ContentElements/Layouts/
+   }
+   partialRootPaths {
+      200 = EXT:site_mutayyab/Resources/Private/ContentElements/Partials/
+   }
+   templateRootPaths {
+      200 = EXT:site_mutayyab/Resources/Private/ContentElements/Templates/
+   }
+}
+

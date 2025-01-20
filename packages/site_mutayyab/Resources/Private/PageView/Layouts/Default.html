@@ -1,0 +1,46 @@
+     <!-- ## site header 
+        ================================================== -->
+        <div id="preloader">
+            <div id="loader">
+            </div>
+        </div>
+        <div class="s-pagewrap">
+
+            <div class="circles">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        <header class="s-header">
+
+            <div class="header-mobile">
+                <span class="mobile-home-link"><a href="index.html">Mutayyab.</a></span>
+                <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
+            </div>
+
+            <div class="row wide main-nav-wrap">
+                <nav class="column lg-12 main-nav">
+                    <ul>
+                        <li>
+                            <f:link.page pageUid="1">Mutayyab</f:link.page>
+                        </li>
+                        <li class="current">
+                            <f:link.typolink parameter="#c1">Intro</f:link.typolink>
+                        </li>
+                        <f:for each="{mainnavigation}" as="menu">
+                            <li>
+                                <f:link.typolink parameter="#{menu.data.uid}" class="smoothscroll">{menu.title}</f:link.typolink>
+                            </li>
+                        </f:for>
+              
+                      
+                    </ul>
+                </nav>
+            </div>
+
+        </header> <!-- end s-header -->
+        
+<f:render section="Main" />
+</div>

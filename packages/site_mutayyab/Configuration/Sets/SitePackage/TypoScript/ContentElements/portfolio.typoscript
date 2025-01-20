@@ -1,0 +1,6 @@
+tt_content {
+  portfolio =< lib.contentElement
+ portfolio {
+    templateName = Portfolio
+  }
+}

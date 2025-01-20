@@ -1,0 +1,5 @@
+name: devstop/site-mutayyab
+label: 'Site Mutayyab'
+dependencies:
+  - typo3/fluid-styled-content
+  - typo3/fluid-styled-content-css

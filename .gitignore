@@ -1,0 +1,35 @@
+# PHPStorm workspace files
+.idea/*
+!.idea/sasslintPlugin.xml
+
+# Ignore OS-specific files
+.DS_Store
+
+# Ignore platform db dumps
+*--dump.sql
+
+
+
+# misc (needs to be removed)
+.vagrant/
+/vaultpw.txt
+
+# TYPO3 Caches
+/var/
+
+/bin/
+/vendor/
+/.php-cs-fixer.cache
+
+# Exclude web, but allow TYPO3-specific files
+/public/fileadmin
+/public/typo3
+/public/typo3temp
+/public/index.php
+!/public/favicon.*
+!/public/.htaccess
+
+# Exclude site-configuration for this project. They are heavily edited by the editor so we cant keep them under
+# version control
+config/sites
+/web/fileadmin_bak/

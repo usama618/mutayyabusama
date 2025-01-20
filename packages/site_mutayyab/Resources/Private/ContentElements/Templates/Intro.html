@@ -1,0 +1,33 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true"><f:layout name="Default"/>
+    <f:section name="Header">
+        
+    </f:section>
+   
+    <f:section name="Main">
+        <div class="s-intro target-section">
+        <div class="row intro-content wide">
+            <div class="column">
+                <div class="text-pretitle with-line">
+                    {data.header}
+                </div>
+
+                <h1 class="text-huge-title">
+                    <f:format.html>{data.bodytext}</f:format.html>
+                </h1>
+            </div>
+
+            <ul class="intro-social">
+                <f:for each="{listitems}" as="items">
+                    <f:link.typolink target="_blank" parameter="{items.data.link}">{items.data.linklabel}</f:link.typolink>
+                </f:for>
+            </ul>
+
+        </div> <!-- end intro content -->
+    </div>
+        <a href="#c2" class="intro-scrolldown smoothscroll">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
+        </a>
+    </f:section>
+</html>

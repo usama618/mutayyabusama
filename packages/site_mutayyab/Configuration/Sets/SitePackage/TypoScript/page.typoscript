@@ -1,0 +1,64 @@
+##############
+#### PAGE ####
+##############
+page = PAGE
+page {
+    typeNum = 0
+    shortcutIcon = EXT:site_mutayyab/Resources/Public/Icons/favicon.ico
+
+    10 = PAGEVIEW
+    10 {
+        paths {
+            0 = EXT:site_mutayyab/Resources/Private/PageView/
+            1 = {$page.pageview.paths}
+        }
+        dataProcessing {
+            10 = files
+            10 {
+                references.fieldName = media
+            }
+            20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            20 {
+                as = mainnavigation
+            }
+            30 = page-content
+        }
+    }
+    meta {
+        viewport = {$page.meta.viewport}
+        robots = {$page.meta.robots}
+        apple-mobile-web-app-capable = {$page.meta.apple-mobile-web-app-capable}
+
+        X-UA-Compatible = {$page.meta.compatible}
+        X-UA-Compatible {
+            attribute = http-equiv
+        }
+    }
+
+    includeCSSLibs {
+
+    }
+
+    includeCSS {
+            site_mutayyab_vendor = EXT:site_mutayyab/Resources/Public/Css/vendor.css
+        site_mutayyab_style = EXT:site_mutayyab/Resources/Public/Css/styles.css
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+          site_mutayyab_plugins = EXT:site_mutayyab/Resources/Public/JavaScript/plugins.js
+        site_mutayyab_scripts = EXT:site_mutayyab/Resources/Public/JavaScript/main.js
+    }
+    bodyTagAdd = id="top"
+}

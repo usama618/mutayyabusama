@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2025-01-13UTC22:07:560">
+        <header>
+            <authorName>Mutayyab Usama</authorName>
+            <authorEmail>mup1715@gmail.com</authorEmail>
+        </header>
+        <body>
+        <trans-unit id="CType.intro" resname="CType.intro">
+				<source>Intro</source>
+			</trans-unit>
+        <trans-unit id="CType.experience" resname="CType.experience">
+				<source>Experience</source>
+			</trans-unit>
+        <trans-unit id="tt_content.company" resname="tt_content.company">
+				<source>Company</source>
+		</trans-unit>
+        <trans-unit id="tt_content.role" resname="tt_content.role">
+				<source>Role</source>
+		</trans-unit>
+        <trans-unit id="tt_content.duration" resname="tt_content.duration">
+				<source>Job Duration</source>
+		</trans-unit>
+        <trans-unit id="tt_content.jobdescription" resname="tt_content.jobdescription">
+				<source>Job Description</source>
+		</trans-unit>
+    <trans-unit id="tx_sitemutayyab_education.title" resname="tx_sitemutayyab_education.title">
+				<source>Education</source>
+		</trans-unit>  
+    <trans-unit id="tx_sitemutayyab_education.sorting_foreign" resname="tx_sitemutayyab_education.sorting_foreign">
+				<source>Education Sorting Foreign</source>
+		</trans-unit> 
+    <trans-unit id="tx_sitemutayyab_education.institute" resname="tx_sitemutayyab_education.institute">
+				<source>Institute</source>
+		</trans-unit>
+    <trans-unit id="tx_sitemutayyab_education.specialization" resname="tx_sitemutayyab_education.specialization">
+				<source>Specialization</source>
+		</trans-unit>
+    <trans-unit id="tx_sitemutayyab_education.educationdate" resname="tx_sitemutayyab_education.educationdate">
+				<source>Education Duration</source>
+		</trans-unit>
+    <trans-unit id="CType.portfolio" resname="CType.portfolio">
+				<source>Portfolio</source>
+		</trans-unit>
+        </body>
+    </file>
+</xliff>

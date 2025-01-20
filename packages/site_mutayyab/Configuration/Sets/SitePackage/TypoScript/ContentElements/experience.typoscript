@@ -1,0 +1,6 @@
+tt_content {
+  experience =< lib.contentElement
+ experience {
+    templateName = Experience
+  }
+}

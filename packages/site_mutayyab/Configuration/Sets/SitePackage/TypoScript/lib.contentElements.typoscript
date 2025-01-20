@@ -1,0 +1,81 @@
+lib.content = COA
+lib.content {
+
+### Content from Homepage
+10 = CONTENT
+10 {
+table = tt_content
+select {
+pidInList.data = site.rootPageId
+orderBy = sorting
+where.cObject = COA
+where.cObject {
+10 = TEXT
+10 {
+field = colPos
+intval = 1
+ifEmpty = 0
+noTrimWrap = | AND colPos=||
+}
+}
+}
+}
+
+### Contents from subpages
+30 = CONTENT
+30 {
+table = pages
+select.orderBy = sorting
+select.where = doktype != 199
+
+renderObj = COA
+renderObj {
+10 = CONTENT
+10 {
+table = tt_content
+select {
+pidInList.field = uid
+orderBy = sorting
+where = colPos = 0
+}
+}
+
+stdWrap {
+if.isLessThan.field = doktype
+if.value = 3
+wrap = <section id="c{field:uid}" class="s-{field:title} target-section">|</section>
+wrap.insertData = 1
+}
+
+}
+}
+}
+
+
+lib.contentElement {
+  dataProcessing.7072022 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+  dataProcessing.7072022 {
+    if.isTrue.field = tx_sitemutayyab_education_items
+    table = tx_sitemutayyab_education
+    colPos.data = field:colPos
+    pidInList.data = field:pid
+    orderBy = sorting_foreign
+    where.data = field:_LOCALIZED_UID // field:uid
+    where.wrap = tablename="tt_content" AND fieldname="tx_sitemutayyab_education_items" AND uid_foreign = |
+    languageField = 0
+    as = educationlist
+
+    dataProcessing {
+      10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+      10 {
+        if.isTrue.field = image
+        references.fieldName = image
+        references.table = tx_sitemutayyab_education
+        sorting = sorting_foreign
+        as = image
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,6 @@
+tt_content {
+  intro =< lib.contentElement
+ intro {
+    templateName = Intro
+  }
+}

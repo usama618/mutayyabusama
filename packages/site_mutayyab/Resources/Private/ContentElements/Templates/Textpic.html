@@ -1,0 +1,33 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Header">
+</f:section>
+<f:section name="Main">
+
+<section id="about" class="s-about target-section">
+
+
+    <div class="row about-info wide" data-animate-block>
+
+        <div class="column lg-6 md-12 about-info__pic-block">
+           <f:image image="{files.0}" class="about-info__pic"/>
+        </div>
+
+        <div class="column lg-6 md-12">
+            <div class="about-info__text" >
+
+                <h2 class="text-pretitle with-line" data-animate-el>
+                    {data.header}
+                </h2>
+                <p class="attention-getter" data-animate-el>
+                    <f:format.html>{data.bodytext}</f:format.html>
+                </p>
+                <f:link.typolink target="_blank" class="btn btn--medium u-fullwidth" parameter="{data.header_link}">{data.subheader}</f:link.typolink>
+            </div>
+        </div>
+    </div> <!-- about-info -->
+
+</section> <!-- end s-about -->
+
+</f:section>
+</html>
