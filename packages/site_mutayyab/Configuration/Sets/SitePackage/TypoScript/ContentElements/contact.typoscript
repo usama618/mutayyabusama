@@ -1,0 +1,6 @@
+tt_content {
+  contact =< lib.contentElement
+ contact {
+    templateName = Contact
+  }
+}

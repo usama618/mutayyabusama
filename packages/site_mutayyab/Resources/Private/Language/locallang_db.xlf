@@ -42,6 +42,15 @@
     <trans-unit id="CType.portfolio" resname="CType.portfolio">
 				<source>Portfolio</source>
 		</trans-unit>
+	<trans-unit id="CType.contact" resname="CType.contact">
+				<source>Contact</source>
+		</trans-unit>
+	<trans-unit id="tt_content.email" resname="tt_content.email">
+				<source>Email</source>
+		</trans-unit>
+	<trans-unit id="tt_content.phone" resname="tt_content.phone">
+				<source>Phone</source>
+		</trans-unit>
         </body>
     </file>
 </xliff>

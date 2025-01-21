@@ -35,6 +35,18 @@ $additionalColumns = [
             ],
         ],
     ],
+    'email' => [
+        'label' => 'LLL:EXT:site_mutayyab/Resources/Private/Language/locallang_db.xlf:tt_content.email',
+        'config' => [
+            'type' => 'input'
+        ]
+        ],
+    'phone' => [
+        'label' => 'LLL:EXT:site_mutayyab/Resources/Private/Language/locallang_db.xlf:tt_content.phone',
+        'config' => [
+            'type' => 'input'
+        ]
+        ],
 ];
 
 ExtensionManagementUtility::addTCAcolumns('tt_content', $additionalColumns);

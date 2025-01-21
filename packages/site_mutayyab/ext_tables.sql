@@ -1,6 +1,8 @@
 
 CREATE TABLE tt_content (
 	tx_sitemutayyab_education int(4) DEFAULT '0' NOT NULL,
+	email varchar(1024) DEFAULT '' NOT NULL,
+	phone varchar(1024) DEFAULT '' NOT NULL,
 );
 
 CREATE TABLE tx_sitemutayyab_education (
