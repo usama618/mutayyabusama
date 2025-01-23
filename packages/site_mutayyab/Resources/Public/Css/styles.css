@@ -3199,7 +3199,7 @@ img.u-pull-left {
     min-height      : calc(25.5 * var(--space));
     justify-content : center;
     align-items     : center;
-    padding-top     : calc(16vh + var(--header-height));
+    padding-top     : calc(10vh + var(--header-height));
     padding-bottom  : var(--vspace-3);
 }
 
@@ -3215,8 +3215,10 @@ img.u-pull-left {
     z-index          : 1;
     list-style       : none;
     display          : flex;
-    font-size        : 1rem;
+    font-size        : 2rem;
     font-weight      : 400;
+    gap: 30px;
+    color: white;
     text-transform   : uppercase;
     letter-spacing   : .3em;
     margin           : 0;

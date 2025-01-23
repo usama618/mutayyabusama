@@ -1,0 +1,19 @@
+// .hosts.yaml
+
+// Configure your TYPO3 staging site
+staging.mutayyabusama.de:
+  host: staging.mutayyabusama.de
+  stage: staging
+  branch: staging
+  user: username
+  identityFile: ~
+  deploy_path: /var/www/mutayyab
+
+// Configure your TYPO3 production site
+mutayyabusama.de:
+  host: mutayyabusama.de
+  stage: production
+  branch: master
+  user: username
+  identityFile: ~
+  deploy_path: /var/www/mutayyab
