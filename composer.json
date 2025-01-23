@@ -48,5 +48,9 @@
 			"type": "path",
 			"url": "./packages/*"
 		}
-	]
+	],
+	"require-dev": {
+		"deployer/deployer": "^7",
+		"deployer/dist": "^6.8"
+	}
 }
