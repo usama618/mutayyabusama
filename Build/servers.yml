@@ -1,9 +1,9 @@
-  hosts:
+hosts:
   production:
-      stage: production
-      hostname: 45.147.248.94
-      remote_user: root
-      writable_mode: chmod
-      forward_agent: true
-      deploy_path: ~/var/www/mutayyab
-      keep_releases: 2
+    stage: production
+    hostname: 45.147.248.94
+    remote_user: root
+    writable_mode: chmod
+    forward_agent: true
+    deploy_path: ~/var/www/mutayyab
+    keep_releases: 2
